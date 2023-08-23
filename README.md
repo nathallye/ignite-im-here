@@ -227,20 +227,30 @@ Para aprender a configurar o seu emulador no Android Studio e executar a sua apl
 >
 > Podemos adicionar flags para especificar a linguagem, ex.: `npx react-native init myapp --template react-native-template-typescript`. 
 
+## Executando aplicação
+
+Agora que possuimos tudo que é necessário para executar uma aplicação React Native CLI, basta seguirmos os seguintes passos:
+
+- Acessar a pasta do projeto pelo terminal;
+- Executar o comando `npm start`;
+- Executar o comando `npm run android`.
+
+Seguindo esses passo o app deve abrir com sucesso no dispositivo! 🎉
+
 ## Estrutura de pastas
 
-- **__tests__** : onde vamos conseguir rodar o nosso app e testar;
-- **.bundle** : criamos um bundle para rodar no android, ele vai ser responsavel por transcrever o que está escrito no projeto para ser reconhecido no android;
-- **android** : nessa pasta teremos as configurações nativas do android;
-- **ios** : nessa pasta teremos as configurações nativas do ios;
-- **node_modules** : pasta de dependências do javascript;
-- **.buckconfig**, **.eslintrc**, **flowconfig** : arquivos de configurações;
-- **prettierrc.js** : arquivo de regras de código;
-- **.ruby-version** : para guardar a versão do ruby que vamos rodar no ios; 
-- **.watchmanconfig** : arquivo de configuração de watch;
-- **App.js** : arquivo da aplicação;
-- **babel.config.js** : arquivo de configuração do babel, já vem configurado, faz compilação para as versões mais antigas do JS;
-- **Gemfile**, **Gemfile.lock** : arquivos de gems para o ruby;
-- **index.js** : porta de entrada da aplicação em react native, ele importa o _AppREgistry_ do react native, e usa o método _registerCompent_ que vai registrar o componente raíz da aplicação(Componente chamado App);
-- **metro.config.js** : arquivo de configuração do metro bundle;
+- **__tests__**: onde vamos conseguir rodar o nosso app e testar;
+- **.bundle**: criamos um bundle para rodar no android, ele vai ser responsavel por transcrever o que está escrito no projeto para ser reconhecido no android;
+- **android**: nessa pasta teremos as configurações nativas do android;
+- **ios**: nessa pasta teremos as configurações nativas do ios;
+- **node_modules**: pasta de dependências do javascript;
+- **.buckconfig**, **.eslintrc**, **flowconfig**: arquivos de configurações;
+- **prettierrc.js**: arquivo de regras de código;
+- **.ruby-version**: para guardar a versão do ruby que vamos rodar no ios; 
+- **.watchmanconfig**: arquivo de configuração de watch;
+- **App.tsx**: arquivo da aplicação;
+- **babel.config.js**: arquivo de configuração do babel, já vem configurado, faz compilação para as versões mais antigas do JS;
+- **Gemfile**, **Gemfile.lock**: arquivos de gems para o ruby;
+- **index.js**: porta de entrada da aplicação em react native, ele importa o _AppREgistry_ do react native, e usa o método _registerCompent_ que vai registrar o componente raíz da aplicação(Componente chamado App);
+- **metro.config.js**: arquivo de configuração do metro bundle;
 - **package.json** : arquivo de dependências JS;
