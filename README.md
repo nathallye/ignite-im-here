@@ -18,7 +18,9 @@ Facilita (e muito) rodar seu projeto em dispositivos físicos. No seu ecossistem
 
 #### Managed workflow x Bare workflow
 
-![Captura de tela 2023-08-21 232131](https://github.com/nathallye/ignite-im-here/assets/86172286/93be5d5a-1867-495b-a54f-628fb058200b)
+<div align="center">
+  <img width="600" src="https://github.com/nathallye/ignite-im-here/assets/86172286/93be5d5a-1867-495b-a54f-628fb058200b">
+</div>
 
 ### CLI
 
@@ -189,13 +191,17 @@ Na sequência, será pedido o tipo de instalação. Vamos escolher a opção `Cu
 
 Nesse momento, será pedido para escolher a localização do pacote JDK instalado. Clicar em `⬇` e verificar se a opção `JAVA_HOME` está apontando para a **JDK 11**. Se sim, vamos escolher e clicar em `Next`. Caso contrário, vamos clicar no no botão ... e escolher a JDK 11 (podemos inclusive utilizar o caminho anotado no passo anterior).
 
-![Alt text](image.png)
+<div align="center">
+  <img width="600" src="image.png">
+</div>
 
 Em seguida, será perguntado sobre qual tema será utilizado. Vamos escolher o tema dracula e clicar em `Next`.
 
 Chegamos na etapa mais importante do processo, a instalação da SDK. A janela apresentará algumas opções, marcaremos todas.
 
-![Alt text](image-1.png)
+<div align="center">
+  <img width="600" src="image-1.png">
+</div>
 
 > `SDK` é o pacote que vai possibilitar que a aplicação React Native faça o build. Por padrão, ele instala a última SDK estável;
 >
@@ -213,7 +219,9 @@ Por fim, será realizada a instalação das configurações selecionadas. Quando
 
 Caso a instalação e configuração do Android Studio ocorra com sucesso, devemos nos deparar com uma tela semelhante a essa:
 
-![Alt text](image-2.png)
+<div align="center">
+  <img width="600" src="image-2.png">
+</div>
 
 ### Emulador
 
