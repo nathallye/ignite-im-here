@@ -4,6 +4,10 @@
 
 Framework open source, Cross Platform(multiplataforma). Todo código desenvolvido é convertido para a linguagem nativa do sistema operacional. Conseguimos desenvolver aplicações para Android e iOS utilizando um código único.
 
+<div align="center">
+  <img width="600" src="image-3.png">
+</div>
+
 > [Documentação](https://reactnative.dev).
 
 ## Expo & CLI
@@ -262,3 +266,32 @@ Seguindo esses passo o app deve abrir com sucesso no dispositivo! 🎉
 - **index.js**: porta de entrada da aplicação em react native, ele importa o _AppREgistry_ do react native, e usa o método _registerCompent_ que vai registrar o componente raíz da aplicação(Componente chamado App);
 - **metro.config.js**: arquivo de configuração do metro bundle;
 - **package.json** : arquivo de dependências JS;
+
+## Densidade de pixel
+
+Densidade de Pixel é o número total de pixels que existe dentro de uma área física da tela (PPI - pixels per inch, ou pixel por polegada).
+
+- Por padrão, em aplicações RN não colocamos uma unidade de medida para definir os tamanhos nas estilizações.
+
+Existem dois tipos de pixel:
+
+1. O **pixel de hardware** é um ponto de luz na tela.
+2. Já o **pixel de software** é dinâmico de acordo com a densidade de pixels da tela.
+
+<div align="center">
+  <img width="600" src="image-4.png">
+</div>
+
+<div align="center">
+  <img width="600" src="image-5.png">
+</div>
+
+> Quanto mais perto do dispositivo mais detalhes de visualização será requerido, ou seja, será necessário uma maior densidade de pixels (smartphone e tablet). Quanto mais distante, menor poderá ser a densidade de pixels (Tv, Projetores).
+
+**Independência de Densidade**
+
+Renderiza os elementos de uma forma independente das características e densidades de cada dispositivo. Android - DPI ("dots per inch") e iOS (points).
+
+<div align="center">
+  <img width="600" src="image-6.png">
+</div>
