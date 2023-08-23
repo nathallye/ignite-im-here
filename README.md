@@ -5,7 +5,7 @@
 Framework open source, Cross Platform(multiplataforma). Todo código desenvolvido é convertido para a linguagem nativa do sistema operacional. Conseguimos desenvolver aplicações para Android e iOS utilizando um código único.
 
 <div align="center">
-  <img width="600" src="https://github.com/nathallye/ignite-im-here/assets/86172286/a3434e3c-e538-4ea2-8761-b25448b95036">
+  <img width="600" src="https://github.com/nathallye/ignite-im-here/assets/86172286/11c8196a-907f-4a8c-9830-c6389860fdf8">
 </div>
 
 > [Documentação](https://reactnative.dev).
