@@ -5,7 +5,7 @@
 Framework open source, Cross Platform(multiplataforma). Todo código desenvolvido é convertido para a linguagem nativa do sistema operacional. Conseguimos desenvolver aplicações para Android e iOS utilizando um código único.
 
 <div align="center">
-  <img width="600" src="image-3.png">
+  <img width="600" src="https://github.com/nathallye/ignite-im-here/assets/86172286/a3434e3c-e538-4ea2-8761-b25448b95036">
 </div>
 
 > [Documentação](https://reactnative.dev).
@@ -196,7 +196,7 @@ Na sequência, será pedido o tipo de instalação. Vamos escolher a opção `Cu
 Nesse momento, será pedido para escolher a localização do pacote JDK instalado. Clicar em `⬇` e verificar se a opção `JAVA_HOME` está apontando para a **JDK 11**. Se sim, vamos escolher e clicar em `Next`. Caso contrário, vamos clicar no no botão ... e escolher a JDK 11 (podemos inclusive utilizar o caminho anotado no passo anterior).
 
 <div align="center">
-  <img width="600" src="image.png">
+  <img width="600" src="https://github.com/nathallye/ignite-im-here/assets/86172286/5f41f174-af3e-4058-8d1e-71e3d2f614fc">
 </div>
 
 Em seguida, será perguntado sobre qual tema será utilizado. Vamos escolher o tema dracula e clicar em `Next`.
@@ -204,7 +204,7 @@ Em seguida, será perguntado sobre qual tema será utilizado. Vamos escolher o t
 Chegamos na etapa mais importante do processo, a instalação da SDK. A janela apresentará algumas opções, marcaremos todas.
 
 <div align="center">
-  <img width="600" src="image-1.png">
+  <img width="600" src="https://github.com/nathallye/ignite-im-here/assets/86172286/25cb6ae6-51ba-4861-b4e5-61d072873780">
 </div>
 
 > `SDK` é o pacote que vai possibilitar que a aplicação React Native faça o build. Por padrão, ele instala a última SDK estável;
@@ -224,7 +224,7 @@ Por fim, será realizada a instalação das configurações selecionadas. Quando
 Caso a instalação e configuração do Android Studio ocorra com sucesso, devemos nos deparar com uma tela semelhante a essa:
 
 <div align="center">
-  <img width="600" src="image-2.png">
+  <img width="600" src="https://github.com/nathallye/ignite-im-here/assets/86172286/251f68b6-1614-4b18-afbd-2fad52d85584">
 </div>
 
 ### Emulador
@@ -279,11 +279,11 @@ Existem dois tipos de pixel:
 2. Já o **pixel de software** é dinâmico de acordo com a densidade de pixels da tela.
 
 <div align="center">
-  <img width="600" src="image-4.png">
+  <img width="600" src="https://github.com/nathallye/ignite-im-here/assets/86172286/fe2e5714-beed-4e66-bae0-d47b7f0dbb15">
 </div>
 
 <div align="center">
-  <img width="600" src="image-5.png">
+  <img width="600" src="https://github.com/nathallye/ignite-im-here/assets/86172286/e809b05d-21df-426f-9576-3500b4324677">
 </div>
 
 > Quanto mais perto do dispositivo mais detalhes de visualização será requerido, ou seja, será necessário uma maior densidade de pixels (smartphone e tablet). Quanto mais distante, menor poderá ser a densidade de pixels (Tv, Projetores).
@@ -293,5 +293,5 @@ Existem dois tipos de pixel:
 Renderiza os elementos de uma forma independente das características e densidades de cada dispositivo. Android - DPI ("dots per inch") e iOS (points).
 
 <div align="center">
-  <img width="600" src="image-6.png">
+  <img width="600" src="https://github.com/nathallye/ignite-im-here/assets/86172286/63a788ab-a5ed-45ab-9434-6b692388b31e">
 </div>
