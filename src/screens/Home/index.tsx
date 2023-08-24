@@ -1,11 +1,12 @@
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 
 import { styles } from "./styles";
+import { Participant } from "../../components/Participant";
 
 export const Home = () => {
   const handleParticipantAdd = () => {
     console.log("Adding...");
-  }
+  };
 
   return (
     <View style={styles.container}>
@@ -28,6 +29,8 @@ export const Home = () => {
           </Text>
         </TouchableOpacity>
       </View>
+
+      <Participant />
     </View>
-  );
-}
+  )
+};
