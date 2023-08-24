@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     padding: 24
   },
   eventName: {
-    color: "#FDFCFE",
+    color: "#FFF",
     fontSize: 24,
     fontWeight: "bold",
 
@@ -23,9 +23,24 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     
     height: 56,
+    marginTop: 16,
     padding: 16,
 
-    color: "#FDFCFE",
+    color: "#FFF",
     fontSize: 16
+  },
+  button: {
+    alignItems: "center",
+    justifyContent: "center",
+
+    backgroundColor: "#31CF67",
+    borderRadius: 5,
+
+    width: 56,
+    height: 56
+  },
+  buttonText: {
+    color: "#FFF",
+    fontSize: 24
   }
 });
