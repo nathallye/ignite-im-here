@@ -1,4 +1,4 @@
-import { FlatList, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Alert, FlatList, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 import { styles } from "./styles";
 import { Participant } from "../../components/Participant";
@@ -14,10 +14,27 @@ export const Home = () => {
   ];
 
   const handleParticipantAdd = () => {
+    participants.map((participant) => {
+      if (participants.includes(participant)) {
+        return Alert.alert("Participante Existe", "Já existe um participante na lista com o nome informado.")
+      }
+    });
+
     console.log("Adding...");
   };
 
   const handleParticipantRemove = (name: string) => {
+    Alert.alert("Remover", `Tem certeza que deseja remover o participante ${name}?`, [
+      {
+        text: "Sim",
+        onPress: () => Alert.alert("Deletado!")
+      },
+      {
+        text: "Não",
+        style: "cancel"
+      }
+    ]);
+
     console.log("Acionando a função handleParticipantRemove via função onPress do TouchableOpacity.");
   };
 
