@@ -295,3 +295,9 @@ Renderiza os elementos de uma forma independente das características e densidad
 <div align="center">
   <img width="600" src="https://github.com/nathallye/ignite-im-here/assets/86172286/63a788ab-a5ed-45ab-9434-6b692388b31e">
 </div>
+
+## ScrollView e FlatList
+
+- A `ScrollView` carrega todos os elementos, mesmo se eles não estiverem visíveis na tela.
+
+- A `FlatList` renderiza somente os elementos que cabem em tela.

@@ -1,10 +1,10 @@
-import { Text, TouchableOpacity, View } from "react-native";
+import { GestureResponderEvent, Text, TouchableOpacity, View } from "react-native";
 
 import { styles } from "./styles";
 
 type ParticipantProps = {
   name: string;
-  onRemove: (name: string) => void;
+  onRemove: (event: GestureResponderEvent) => void;
 }
 
 export const Participant = ({ name, onRemove }: ParticipantProps) => {
