@@ -8,6 +8,10 @@ export const Home = () => {
     console.log("Adding...");
   };
 
+  const handleParticipantRemove = (name: string) => {
+    console.log("Acionando a função handleParticipantRemove via função onPress do TouchableOpacity.");
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.eventName}>
@@ -30,10 +34,9 @@ export const Home = () => {
         </TouchableOpacity>
       </View>
 
-      <Participant name="Nathallye Bacelar" />
-      <Participant name="Paulo Bacelar" />
-      <Participant name="Cocadinha Bacelar" />
-
+      <Participant name="Nathallye Bacelar" onRemove={() => handleParticipantRemove("Nathallye Bacelar")} />
+      <Participant name="Paulo Bacelar" onRemove={() => handleParticipantRemove("Paulo Bacelar")} />
+      <Participant name="Cocadinha Bacelar" onRemove={() => handleParticipantRemove("Cocadinha Bacelar")} />
     </View>
   )
 };
