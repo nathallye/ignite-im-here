@@ -30,7 +30,10 @@ export const Home = () => {
         </TouchableOpacity>
       </View>
 
-      <Participant />
+      <Participant name="Nathallye Bacelar" />
+      <Participant name="Paulo Bacelar" />
+      <Participant name="Cocadinha Bacelar" />
+
     </View>
   )
 };
