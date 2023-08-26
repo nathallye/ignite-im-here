@@ -18,12 +18,12 @@ export const Home = () => {
   };
 
   const handleParticipantRemove = (name: string) => {
-    const filtroParticipants = participants.filter(participant => participant !== name);
+    const participantsFilter = participants.filter(participant => participant !== name);
 
     Alert.alert("Remover", `Tem certeza que deseja remover o participante ${name}?`, [
       {
         text: "Sim",
-        onPress: () => setParticipants(filtroParticipants)
+        onPress: () => setParticipants(participantsFilter)
       },
       {
         text: "Não",
