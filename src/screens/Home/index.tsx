@@ -2,25 +2,19 @@ import { Alert, FlatList, Text, TextInput, TouchableOpacity, View } from "react-
 
 import { styles } from "./styles";
 import { Participant } from "../../components/Participant";
+import { useState } from "react";
 
 export const Home = () => {
-  const participants = [
-    "Nathallye Bacelar", 
-    "Paulo Bacelar", 
-    "Coquinho Bacelar", 
-    "Lenilda Miranda", 
-    "Isabel Souza", 
-    "Luciana Sales"
-  ];
+  const [participants, setParticipants] = useState<string[]>(["Nathallye Bacelar", "Paulo Bacelar"]);
+  const [newParticipant, setNewParticipant] = useState<string>("");
 
   const handleParticipantAdd = () => {
-    participants.map((participant) => {
-      if (participants.includes(participant)) {
-        return Alert.alert("Participante Existe", "Já existe um participante na lista com o nome informado.")
-      }
-    });
+    if (participants.includes(newParticipant)) {
+      return Alert.alert("Participante Existe", "Já existe um participante na lista com o nome informado.")
+    }
 
-    console.log("Adding...");
+    setParticipants([...participants, newParticipant]);
+    setNewParticipant("");
   };
 
   const handleParticipantRemove = (name: string) => {
@@ -52,7 +46,13 @@ export const Home = () => {
           style={styles.input}
           placeholder="Nome do participante"
           placeholderTextColor="#6B6B6B"
-        />
+          onChangeText={(e) => setNewParticipant(e)} 
+          value={newParticipant}
+        /> 
+        {/*
+          onChangeText - Para acessarmos o conteúdo digitado
+          value - Vinculamos o valor do input ao estado
+        */}
         <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
           <Text style={styles.buttonText}>
             +
