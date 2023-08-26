@@ -18,18 +18,18 @@ export const Home = () => {
   };
 
   const handleParticipantRemove = (name: string) => {
+    const filtroParticipants = participants.filter(participant => participant !== name);
+
     Alert.alert("Remover", `Tem certeza que deseja remover o participante ${name}?`, [
       {
         text: "Sim",
-        onPress: () => Alert.alert("Deletado!")
+        onPress: () => setParticipants(filtroParticipants)
       },
       {
         text: "Não",
         style: "cancel"
       }
     ]);
-
-    console.log("Acionando a função handleParticipantRemove via função onPress do TouchableOpacity.");
   };
 
   return (
@@ -51,6 +51,7 @@ export const Home = () => {
         /> 
         {/*
           onChangeText - Para acessarmos o conteúdo digitado
+            onChangeText={(e) => setNewParticipant(e)} - ou somente onChangeText={setNewParticipant}
           value - Vinculamos o valor do input ao estado
         */}
         <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
